@@ -1,10 +1,12 @@
 package DZ_5;
 
+// 2) Реализовать алгоритм пирамидальной сортировки (HeapSort).
+
 import java.util.Arrays;
 import java.util.Random;
 
 public class Zadacha_2 {
-    // 2) Реализовать алгоритм пирамидальной сортировки (HeapSort).
+    
     public static void main(String[] args) {
         int[] arr = new int[20];
         Random rnd = new Random();
