@@ -34,7 +34,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-//import javax.swing.RowFilter.Entry;
+
 
 public class Zadacha_1 {
     
@@ -63,16 +63,12 @@ public class Zadacha_1 {
 
     }
 
-    /**
-     СЛАВСЯ chatJPT !!! :)
-     */
+
     public static HashMap<String, Integer> sortHumans(HashMap<String, Integer> hashMap) {
-        // Преобразование записей HashMap в список
         List<Map.Entry<String, Integer>> list = new ArrayList<>(hashMap.entrySet());
-        // Сортировка списка в порядке убывания (от большего к меньшему) на основе
-        // значений
+        
         Collections.sort(list, (o1, o2) -> o2.getValue().compareTo(o1.getValue()));
-        // Создание новой LinkedHashMap для сохранения отсортированных значений
+        
         LinkedHashMap<String, Integer> sortedHashMap = new LinkedHashMap<>();
         for (Map.Entry<String, Integer> entry : list) {
             sortedHashMap.put(entry.getKey(), entry.getValue());
